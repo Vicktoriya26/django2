@@ -9,7 +9,7 @@ class Subject(models.Model):
     
 class Teacher(models.Model):
     name = models.CharField(max_length=100)
-    last_ame = models.CharField(max_length=100)
+    last_name = models.CharField(max_length=100)
     subject = models.ForeignKey(Subject, on_delete=models.CASCADE)
 
     def __str__(self):
